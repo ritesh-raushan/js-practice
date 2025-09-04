@@ -12,14 +12,30 @@
         </header>
 
         <main>
+            <div id="quiz-info">
+                <div id="question-counter"></div>
+                <div id="score-display"></div>
+            </div>
+            
             <div id="statement"></div>
 
             <div id="options">
-                <button name="true" value="true">true</button>
-                <button name="false" value="false">false</button>
+                <button name="true" value="true">True</button>
+                <button name="false" value="false">False</button>
             </div>
 
             <div id="explanation"></div>
+            
+            <div id="controls">
+                <button id="next-btn" style="display: none;">Next Question</button>
+            </div>
+            
+            <div id="final-results" style="display: none;">
+                <h2>Quiz Complete!</h2>
+                <div id="final-score"></div>
+                <div id="percentage"></div>
+                <button id="restart-btn" style="display: none;">Restart Quiz</button>
+            </div>
         </main>
 
         <script src="Quiz.js"></script>
